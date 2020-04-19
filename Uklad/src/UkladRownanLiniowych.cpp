@@ -11,6 +11,28 @@ using namespace std;
 
 
 
+
+
+
+  Macierz & UkladRownanLiniowych::get_A() 
+ {
+     return A;
+ }
+ Wektor & UkladRownanLiniowych::get_B() 
+ {
+     return B;
+ }
+ void UkladRownanLiniowych::set_A(Macierz & N) const
+{
+    N=A;
+}
+ void UkladRownanLiniowych::set_B(Wektor & N) const
+{
+    N=B;
+}
+
+
+
 const Macierz UkladRownanLiniowych::zamien(int i, Macierz A, Wektor B) const
 {
 A=A.transponuj();
@@ -48,14 +70,11 @@ Wynik[i]/=wyzn;
 return Wynik;  
 }
 
+
 const void UkladRownanLiniowych::blad(UkladRownanLiniowych Ukl, Wektor Wynik) const {
 cout <<"Wektor bledu:"<<endl<< (A*Wynik-B)<<endl;
 cout <<"Dlugosc wektora bledu:"<<endl<< (A*Wynik-B).dlugosc()<<endl;
 }
-
-
-
-
 
 
 std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych &UklRown)

@@ -14,23 +14,17 @@ Macierz A;
 Wektor B;
 public:
 UkladRownanLiniowych() {};
+
 UkladRownanLiniowych(Macierz _A ,Wektor _B) : A(_A), B(_B) {};
-  Macierz & get_A() 
- {
-     return A;
- }
-  Wektor & get_B() 
- {
-     return B;
- }
- void set_A(Macierz & N) const
-{
-    N=A;
-}
- void set_B(Wektor & N) const
-{
-    N=B;
-}
+
+ Macierz & get_A() ;
+
+ Wektor & get_B() ;
+
+void set_A(Macierz & N) const;
+
+void set_B(Wektor & N) const;
+
 const Macierz zamien(int i, Macierz A, Wektor B) const ;
 
 const Wektor Cramer(UkladRownanLiniowych Ukl) const ;
@@ -40,22 +34,10 @@ const void blad(UkladRownanLiniowych Ukl, Wektor Wynik) const;
 
 
 
-/*
- * To przeciazenie trzeba opisac. Co ono robi. Jaki format
- * danych akceptuje. Jakie jest znaczenie parametrow itd.
- * Szczegoly dotyczace zalecen realizacji opisow mozna
- * znalezc w pliku:
- *    ~bk/edu/kpo/zalecenia.txt 
- */
+
 std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych &UklRown);
 
-/*
- * To przeciazenie trzeba opisac. Co ono robi. Jaki format
- * danych akceptuje. Jakie jest znaczenie parametrow itd.
- * Szczegoly dotyczace zalecen realizacji opisow mozna
- * znalezc w pliku:
- *    ~bk/edu/kpo/zalecenia.txt 
- */
+
 std::ostream& operator << ( std::ostream &Strm,const UkladRownanLiniowych &UklRown);
 
 

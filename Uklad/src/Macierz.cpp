@@ -90,7 +90,7 @@ return mac;
 
 /*
 Macierz Macierz::zamien() Funkcja zamieniania wierszy miejscami,potrzebna dla algorytmu dla n macierzy
-{                          
+{                               (tylko wersja robocza)
 Macierz mac=*this;
 int i;
 for(i=1;i<=2;i++)
@@ -115,7 +115,7 @@ return Wynik;
 }
 
 /*  PROBA ZAIMPLEMENTOWANIA DLA N WYMIAROWEJ MACIERZY(nie dziala gdy na przekatnej jest 0)
-double Macierz::wyznacznik_1 ()  
+double Macierz::wyznacznik_1 ()                       (tylko wersja robocza)
 {
 double Wynik;
 int j;

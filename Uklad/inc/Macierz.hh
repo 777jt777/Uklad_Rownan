@@ -38,15 +38,8 @@ const Macierz transponuj()const;
 
 const double wyznacznik_sarrusa() const;
 
-//double wyznacznik_1 () ;
-
-//double wyzn_2(int a, int b);
-
-
-
 const bool operator== (const Macierz & W2) const;
 
-//const bool operator== (const Macierz & W2) const;
 };
 
 std::ostream& operator << (std::ostream &Strm, const  Macierz &Mac);

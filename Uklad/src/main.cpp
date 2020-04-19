@@ -14,7 +14,7 @@ Macierz A;
 Wektor B;
 Wektor Wynik;
 UkladRownanLiniowych Ukl;
-double blad1;
+
 
 cout <<"Podaj uklad"<<endl;
 cin  >> Ukl;
