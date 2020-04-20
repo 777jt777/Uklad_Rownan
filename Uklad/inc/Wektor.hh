@@ -1,6 +1,6 @@
 #ifndef WEKTOR_HH
 #define WEKTOR_HH
-#include "../inc/rozmiar.h"
+#include "rozmiar.h"
 #include <iostream>
 
 
@@ -42,22 +42,6 @@ bool operator!= (const Wektor & W2) const;
 std::istream& operator >> (std::istream &Strm, Wektor &Wek);
 
 std::ostream& operator << (std::ostream &Strm, const Wektor &Wek);
-/*
- * To przeciazenie trzeba opisac. Co ono robi. Jaki format
- * danych akceptuje. Jakie jest znaczenie parametrow itd.
- * Szczegoly dotyczace zalecen realizacji opisow mozna
- * znalezc w pliku:
- *    ~bk/edu/kpo/zalecenia.txt 
- */
-//std::istream& operator >> (std::istream &Strm, Wektor &Wek);
 
-/*
- * To przeciazenie trzeba opisac. Co ono robi. Jaki format
- * danych akceptuje. Jakie jest znaczenie parametrow itd.
- * Szczegoly dotyczace zalecen realizacji opisow mozna
- * znalezc w pliku:
- *    ~bk/edu/kpo/zalecenia.txt 
- */
-//std::ostream& operator << (std::ostream &Strm, const Wektor &Wek);
 
 #endif

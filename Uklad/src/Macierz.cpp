@@ -1,5 +1,5 @@
-#include "../inc/Macierz.hh"
-#include "../inc/Wektor.hh"
+#include "Macierz.hh"
+#include "Wektor.hh"
 
 using namespace std;
 /*
@@ -88,25 +88,6 @@ return mac;
 }
 
 
-/*
-Macierz Macierz::zamien() Funkcja zamieniania wierszy miejscami,potrzebna dla algorytmu dla n macierzy
-{                               (tylko wersja robocza)
-Macierz mac=*this;
-int i;
-for(i=1;i<=2;i++)
-{
-if(mac[0][0] || mac[1][1] || mac[2][2])
-{
-mac[0]=mac[i];
-}
-else
-exit(1);
-}
-return mac;
-}
-*/
-
-
  const double Macierz::wyznacznik_sarrusa() const
 {
 double Wynik;
@@ -133,7 +114,24 @@ tab1[j+2]=tab1[j+2]-tab1[j]*tab1[j+2][j];
 Wynik=tab1[0][0]*tab1[1][1]*tab1[2][2]*b;
 return Wynik;
 }
+
+Macierz Macierz::zamien() Funkcja zamieniania wierszy miejscami,potrzebna dla algorytmu dla n macierzy
+{                               (tylko wersja robocza)
+Macierz mac=*this;
+int i;
+for(i=1;i<=2;i++)
+{
+if(mac[0][0] || mac[1][1] || mac[2][2])
+{
+mac[0]=mac[i];
+}
+else
+exit(1);
+}
+return mac;
+}
 */
+
 
 const Macierz Macierz::operator +(Macierz B) const // operator dodawania macierzy
 

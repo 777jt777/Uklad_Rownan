@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../inc/Wektor.hh"
-#include "../inc/Macierz.hh"
-#include "../inc/UkladRownanLiniowych.hh"
+#include "Wektor.hh"
+#include "Macierz.hh"
+#include "UkladRownanLiniowych.hh"
 using namespace std;
 
 

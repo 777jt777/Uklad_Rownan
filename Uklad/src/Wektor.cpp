@@ -1,4 +1,4 @@
-#include "../inc/Wektor.hh"
+#include "Wektor.hh"
 #include <iostream>
 #include <cmath>
 using namespace std;

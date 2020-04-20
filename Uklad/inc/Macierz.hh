@@ -3,7 +3,7 @@
 
 #include "rozmiar.h"
 #include <iostream>
-#include "../inc/Wektor.hh"
+#include "Wektor.hh"
 
 /*
  *  Tutaj trzeba opisac klase. Jakie pojecie modeluje ta klasa

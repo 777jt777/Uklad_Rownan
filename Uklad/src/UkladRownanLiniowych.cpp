@@ -1,4 +1,4 @@
-#include "../inc/UkladRownanLiniowych.hh"
+#include "UkladRownanLiniowych.hh"
 #include <iostream>
 using namespace std;
 
